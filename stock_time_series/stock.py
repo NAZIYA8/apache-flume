@@ -24,7 +24,7 @@ try:
         cr = csv.reader(decoded_content.splitlines(), delimiter=',')
         my_list = list(cr)
         for row in my_list:
-            logger.info(row)
+            print(row)
 except Exception as err:
     logger.error(err)
     

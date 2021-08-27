@@ -2,18 +2,30 @@
 
 # Storing the real time stock data from alpha vantage API using apache flume to HDFS.
 
-Step 1: Get the API key
+NOTE : 
+We must have Hadoop installed and configured on our system.
+Java must also be installed on your system.
+We must have apache flume also installed and configured.
+Have the hadoop script started $ start-all.sh
+
+Versions:
+Hadoop version - hadoop 3.3.1
+Apache flume - Flume 1.9.0
+
+
+Step 1: Get the API key from below
     https://www.alphavantage.co/support/#api-key
 
 Step 2: Go through the documentation part of stock API
+        https://www.alphavantage.co/documentation/
 
 Step 3 : Write the python code to get the live stock data by creating stock.py file and     
               add API key from the env file.
+              
 Step 4: After writing the code run it to get the output of stock data
 
 Step 5: Now, we have to create a file named stocks.conf inside the
-        /home/naziya/apache-flume-1.9.0-bin/conf directory and add the flume 
-        configuration. 
+        /home/naziya/apache-flume-1.9.0-bin/conf directory and add the configuration. 
         Use the below-mentioned command for creating the file “stocks.conf”:
         touch stocks.conf or nano stocks.conf to create and edit.
         
